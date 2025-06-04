@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="サイト紹介分">
+  <title>Handmade Gallery</title>
+  <!-- 【未使用】ファビコン用リンク -->
+  <!-- <link rel="icon" href=""> -->
+  <!-- 【未使用】アップルタッチアイコン -->
+  <!-- <link rel="apple-touch-icon" href=""> -->
+  <!-- リセットCSS読み込み -->
+  <link rel="stylesheet" href="./css/reset.min.css">
+
+  <!-- グーグルフォント読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
+    rel="stylesheet">
+  <!-- スリック用CSS読み込み -->
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <!-- スタイルシート読み込み -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JQuery用 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="contact-page">
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- ハンバーガーメニュー-->
+      <a class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <h1 class="site-title"><a href="index.html">Handmade Gallery</a></h1>
+
+      <!-- メニューリスト -->
+      <nav class="navi">
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="./index.html#header">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#topics">Topics</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#products">Products</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#about">About</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#workshop">Work Shop</a></li>
+          <li class="menu-item"><a class="menu-link" href="./contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <nav class="navi-overlay"></nav> -->
+
+      <!-- サーチアイコン -->
+      <a href="#" class="serch-icon"><img src="./image/search.png" alt="サーチアイコン"></a>
+    </div>
+
+  </header>
+
+  <main>
+    <section>
+      <div id="contact-page">
+        <h2 class="content">- お問い合わせ・ご予約 -</h2>
+
+        <div class="contact-box">
+          <div class="contact-selectbox">
+            <p class="contact-list">お問い合わせ内容<span>必須</span></p>
+            <div>
+              <select class="contact-select">
+                <option value="">選択してください</option>
+                <option value="ご質問">ご質問</option>
+                <option value="ワークショップご予約">ワークショップご予約</option>
+                <option value="お問い合わせ">お問い合わせ</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <p class="contact-list">お名前<span>必須</span></p>
+            <div>
+              <input type="text" class="contact-name">
+            </div>
+          </div>
+          <div>
+            <p class="contact-list">メールアドレス<span>必須</span></p>
+            <div>
+              <input type="text" class="contact-mail">
+            </div>
+          </div>
+          <div>
+            <p class="contact-list">ご質問・ご意見・ワークショップご希望日時</p>
+            <div>
+              <textarea class="contact-area"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-text">
+          <p>※ワークショップご希望日時を記入してください。<br>折り返しこちらからご連絡させていただきます。</p>
+        </div>
+
+        <button class="btn contact send-btn">送信</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- フッター -->
+  <footer id="footer">
+    <h3>Handmade Gallery</h3>
+    <p>2025 Handmade Gallery All Right Reserved.</p>
+  </footer>
+  <script src="./slick/slick.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+</html>

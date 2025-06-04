@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="サイト紹介分">
+  <title>Handmade Gallery</title>
+  <!-- 【未使用】ファビコン用リンク -->
+  <!-- <link rel="icon" href=""> -->
+  <!-- 【未使用】アップルタッチアイコン -->
+  <!-- <link rel="apple-touch-icon" href=""> -->
+  <!-- リセットCSS読み込み -->
+  <link rel="stylesheet" href="./css/reset.min.css">
+
+  <!-- グーグルフォント読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
+    rel="stylesheet">
+  <!-- スリック用CSS読み込み -->
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+  <!-- スタイルシート読み込み -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JQuery用 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- ハンバーガーメニュー-->
+      <a class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <h1 class="site-title"><a href="index.html">Handmade Gallery</a></h1>
+
+      <!-- メニューリスト -->
+      <nav class="navi">
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="./index.html#header">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#topics">Topics</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#products">Products</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#about">About</a></li>
+          <li class="menu-item"><a class="menu-link" href="index.html#workshop">Work Shop</a></li>
+          <li class="menu-item"><a class="menu-link" href="./contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- サーチアイコン -->
+      <a href="#" class="serch-icon"><img src="./image/search.png" alt="サーチアイコン"></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- メインビジュアル　スライドショー -->
+    <div id="mainvisual">
+      <ul class="visual">
+        <li><img src="./image/SlideShow_001.jpg" alt="スライドショーイメージ"></li>
+        <li><img src="./image/SlideShow_002.jpg" alt="スライドショーイメージ"></li>
+        <li><img src="./image/SlideShow_003.jpg" alt="スライドショーイメージ"></li>
+      </ul>
+      <div class="catchcopy">
+        <p><span>「つくる」</span>たのしさを<br>ご一緒しませんか</p>
+      </div>
+      <div class="site-description">
+        <p>このサイトは架空の<br>ハンドメイドギャラリーサイトです</p>
+      </div>
+    </div>
+
+    <!-- トピックス・最新情報 -->
+    <section id="topics">
+
+      <h2 class="content">- Topics -</h2>
+
+      <div class="t-list-box">
+        <ul class="list">
+          <li class="list-data">
+            <time datetime="2025-03-10">2025.03.10</time>
+            <p>ワークショップはじめました</p>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <p>バレンタインネイル追加しました</p>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <P>バレンタインネイル追加しました。<br>てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと</P>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <p>【表示数４】バレンタインネイル追加しました</p>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <p>【表示数５】バレンタインネイル追加しました</p>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <p>【表示数６】バレンタインネイル追加しました</p>
+          </li>
+          <li class="list-data">
+            <time datetime="2025-01-10">2025.01.10</time>
+            <p>【表示数７】バレンタインネイル追加しました</p>
+          </li>
+        </ul>
+
+        <p id="page-top"><a href="./index.html">TOP</a></p>
+        <button type=button class="btn andmore list-btn">and more</button>
+        <button type=button class="btn close-btn list-btn">close</button>
+      </div>
+    </section>
+
+    <!-- 作品ギャラリー -->
+    <section id="products">
+      <h2 class="content">- Products -</h2>
+
+      <div class="p-list">
+        <ol class="item-list">
+          <li>
+            <div class="item">
+              <a href="item0001.html" target="_blank"><img src="./image/item_001.jpg" alt="No.0001 はっぱネイル"></a>
+              <p class="category">Nail</p>
+              <dl class="item-text">
+                <dt>No.00001 はっぱネイル</dt>
+                <dd>このカラー大好き♪<br>いろいろなリーフを組み合わせてみました！</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0002.html" target="_blank"><img src="./image/item_002.jpg" alt="No.0002 うさぎさん"></a>
+              <p class="category">Beads</p>
+              <dl class="item-text">
+                <dt>No.00002 うさぎさん</dt>
+                <dd>Beads Maniaで一目ぼれしたKitで作成。とにかくかわいいです！</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0003.html" target="_blank"><img src="./image/item_003.jpg" alt="No.0003 グランドピアノ"></a>
+              <p class="category">Beads</p>
+              <dl class="item-text">
+                <dt>No.00003 グランドピアノ</dt>
+                <dd>ビーズの穴にワイヤーがなかなか通らなくて大変でした。製作時間やばいです！何回やり直したか・・</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0004.html" target="_blank"><img src="./image/item_004.jpg" alt="No.0004 鯉ネイル"></a>
+              <p class="category">Nail</p>
+              <dl class="item-text">
+                <dt>No.00004 鯉ネイル</dt>
+                <dd>少し水墨画っぽい雰囲気をつくってみました</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0005.html" target="_blank"><img src="./image/item_001.jpg" alt="No.0005 はっぱネイル"></a>
+              <p class="category">Nail</p>
+              <dl class="item-text">
+                <dt>No.00005 はっぱネイル</dt>
+                <dd>【表示数５】このカラー大好き♪<br>いろいろなリーフを組み合わせてみました！</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0006.html" target="_blank"><img src="./image/item_004.jpg" alt="No.0004 鯉ネイル"></a>
+              <p class="category">Nail</p>
+              <dl class="item-text">
+                <dt>No.00006 鯉ネイル</dt>
+                <dd>【表示数宇６】少し水墨画っぽい雰囲気をつくってみました</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <a href="item0007.html" target="_blank"><img src="./image/item_001.jpg" alt="No.0005 はっぱネイル"></a>
+              <p class="category">Nail</p>
+              <dl class="item-text">
+                <dt>No.00007 はっぱネイル</dt>
+                <dd>【表示数７】このカラー大好き♪<br>いろいろなリーフを組み合わせてみました！</dd>
+              </dl>
+            </div>
+          </li>
+        </ol>
+
+        <button type="button" class="btn andmore">and more</button>
+        <button type="button" class="btn close-btn">close</button>
+      </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section id="about">
+      <h2 class="content">- About -</h2>
+      <div class="container">
+        <img class="myphoto" src="./image/about_photo.jpg" alt="自己紹介写真">
+        <div class="container-child">
+          <p>このサイトにお越しいただきありがとうございます。<br>『てづくり』と動物が大好きなおばちゃんです。<br>最近はネイルチップ制作にハマってます！！</p>
+          <p>【作品】<br>ビーズ細工 / ネイルチップ制作 / 編み物</p>
+          <p>てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと</p>
+          <!-- SNSへのリンク -->
+          <ul class="sns-btn">
+            <li><a href="#" target="_blank"><img src="./image/sns-btn-fb.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="./image/sns-btn-x.png" alt="X"></a></li>
+            <li><a href="#" target="_blank"><img src="./image/sns-btn-ig.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ワークショップのご案内 -->
+    <section id="workshop">
+      <h2 class="content">- Work Shop -</h2>
+      <p>
+        ワークショップをはじめました。<br>★作ってみようとキット購入したけど、<br>途中でわからなくなってそのままにしちゃってる・・・<br>★作りたいものがあるんだけど、難しそうで・・・<br>といったお悩みをお持ちの方！<br>お気軽にご連絡ください！<br>一緒に楽しくハンドメイドしましょう♪
+      </p>
+
+      <!-- お問い合わせ・ご予約はこちらボタン -->
+      <a class="btn contact" href="./contact.html" target="_blank">お問い合わせ・ご予約はこちら</a>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer id="footer">
+    <h3>Handmade Gallery</h3>
+    <p>2025 Handmade Gallery All Right Reserved.</p>
+  </footer>
+  <script src="./slick/slick.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
