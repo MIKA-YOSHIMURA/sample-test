@@ -9,6 +9,10 @@ html {
   font-size: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #727077;
   font-family: "Zen Maru Gothic", sans-serif, system-ui;
@@ -49,10 +53,17 @@ li {
   margin: 0 0 30px;
 }
 
+/* 各セクション */
+.inner-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
+
 /* 「and more」「お問い合わせ」「back to Home」ボタン */
 .btn {
   display: block;
-  width: 340px;
+  width: 300px;
   height: 55px;
   border: none;
   margin: 30px auto 72px;
@@ -88,7 +99,8 @@ li {
   right: 20px;
   font-size: 0.875rem;
   line-height: 1;
-  z-index: 99;
+  z-index: 99;margin: 16px;
+
 }
 
 #page-top a {
@@ -107,6 +119,7 @@ li {
 #page-top a:hover {
   text-decoration: none;
   opacity: 0.5;
+  transform: all 0.6s;
 }
 
 
@@ -166,24 +179,23 @@ li {
 /* ------------------------------------------ */
 /* メインビジュアル・スライドショー */
 /* ------------------------------------------ */
-#mainvisual {
-  max-width: 100%;
-  margin: 0 0 72px;
-}
 
 #mainvisual img {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 #mainvisual .visual {
   position: relative;
-  font-family: "Shin Maru Go Ultra";
 }
 
 #mainvisual .catchcopy {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  font-family: "Shin Maru Go Ultra";
   color: #e99787;
   font-size: 3rem;
   font-weight: bold;
@@ -198,7 +210,6 @@ li {
     0px 3px 1px #FFF4ED,
     -2px 0px 1px #FFF4ED,
     0px -2px 1px #FFF4ED;
-  width: 100%;
   background-color: rgba(255, 244, 237, 0.3);
   position: absolute;
   z-index: 10;
@@ -211,7 +222,9 @@ li {
 }
 
 #mainvisual .site-description {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
   color: #727077;
   font-size: 1.25rem;
   font-weight: bold;
@@ -226,7 +239,6 @@ li {
     0px 3px 1px #FFF4ED,
     -2px 0px 1px #FFF4ED,
     0px -2px 1px #FFF4ED;
-  width: 100%;
   background-color: rgba(255, 244, 237, 0.3);
   position: absolute;
   z-index: 15;
@@ -237,15 +249,6 @@ li {
 /* ------------------------------------------ */
 /* トピックス・最新情報*/
 /* ------------------------------------------ */
-#topics {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 72px;
-}
-
-#topics .t-list-box {
-  margin: 0 0 30px;
-}
 
 #topics .list-data {
   display: flex;
@@ -259,7 +262,7 @@ li {
 }
 
 #topics time {
-  margin: 0 16px 0 0;
+  margin: 0 24px 0 0;
 }
 
 #topics .list-btn {
@@ -269,22 +272,25 @@ li {
 /* ------------------------------------------ */
 /* 作品ギャラリー */
 /* ------------------------------------------ */
-#products {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 30px;
+#products .p-list {
+  width: 98%;
+  margin: 0 auto;
+  padding: 1em 0;
 }
 
 #products .item-list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+#products .item-list::after {
+  content:"";
+  width: 32%;
+}
+
 #products .item-list li {
   width: 32%;
-  height: auto;
 }
 
 #products .item-list li:first-child {
@@ -299,7 +305,7 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #EED8c9;
-  height: 500px;
+  height: 560px;
   border-radius: 12px;
   padding: 4px;
   margin: 0 0 16px;
@@ -308,9 +314,14 @@ li {
 #products .item img {
   width: 100%;
   height: 320px;
-  padding: 8px;
+  padding: 8px 8px 16px;
   object-fit: cover;
   border-radius: 16px;
+}
+
+#products .item img:hover {
+  opacity: 0.75;
+  transform: all 0.6s;
 }
 
 #products .category {
@@ -319,7 +330,7 @@ li {
   font-weight: bold;
   width: 80px;
   height: 25px;
-  padding: 4px;
+  padding: 4px 4px 16px;
   background-color: #727077;
   border-radius: 8px;
   text-align: center;
@@ -332,12 +343,14 @@ li {
   letter-spacing: 1px;
   color: #e99787;
   padding: 0 8px 4px;
-}
+  text-shadow:2px 2px 5px rgba(255, 244, 257, 1)
+  }
 
 #products .item-text dd {
-  padding: 0 8px 56px;
-  letter-spacing: 1px;
+  padding: 0 8px 16px;
+  letter-spacing: 0.08em;
   line-height: 1.5;
+  overflow: hidden;
 }
 
 #products .item-list::after {
@@ -349,11 +362,6 @@ li {
 /* ------------------------------------------ */
 /* 自己紹介*/
 /* ------------------------------------------ */
-#about {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 72px;
-}
 
 #about .container {
   display: flex;
@@ -400,14 +408,10 @@ li {
 /* ------------------------------------------ */
 /* ワークショップのご案内*/
 /* ------------------------------------------ */
-#workshop {
-  width: 100%;
-}
-
 #workshop p {
   text-align: center;
   letter-spacing: 0.08em;
-  line-height: 1.5;
+  line-height: 2.0;
   margin: 0 0 30px;
 }
 
@@ -415,10 +419,10 @@ li {
 /* ------------------------------------------ */
 /* フッター*/
 /* ------------------------------------------ */
-#footer {
-  max-width: 100%;
+#footer .inner-wrapper{
   height: 104px;
   background-color: #727077;
+  margin: 0 auto;
 }
 
 #footer h3 {
@@ -440,13 +444,12 @@ li {
 /* お問い合わせ・ご予約ページ*/
 /* ------------------------------------------ */
 #contact-page {
-  width: 100%;
   max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 50px 0 0;
   margin: 0 auto;
 }
 
@@ -468,7 +471,7 @@ li {
   font-size: 1rem;
   letter-spacing: 1px;
   height: 30px;
-  padding: 8px 24px;
+  padding: 4px 24px;
   margin: 0 auto;
 }
 
@@ -495,7 +498,7 @@ li {
 
 #contact-page .contact-select {
   display: block;
-  width: 300px;
+  width: 240px;
   height: 40px;
   padding: 8px 24px;
   margin: 4px 24px;
@@ -533,9 +536,7 @@ li {
 /* 作品詳細ページ*/
 /* ------------------------------------------ */
 #product-page {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 50px 0 0;
 }
 
 #product-page .item {
@@ -546,7 +547,7 @@ li {
 
 #product-page img {
   border-radius: 50px;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
 }
 
 #product-page .category {
@@ -565,14 +566,14 @@ li {
 #product-page .item-text div {
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 0.08em;
   color: #e99787;
   padding: 0 0 8px;
 }
 
 #product-page .item-text p {
-  padding: 0 0 56px;
-  letter-spacing: 1px;
+  padding: 0 0 48px;
+  letter-spacing: 0.08em;
   line-height: 2;
 }
 
@@ -770,22 +771,18 @@ li {
   /* 作品ギャラリー */
   /* ------------------------------------------ */
 
-  #products .item-list {
-    margin: 0 2% 30px;
-  }
-
   #products .item-list li {
     width: 49%;
   }
 
   #products .item {
-    height: 358px;
+    height: 450px;
     border-radius: 8px;
   }
 
   #products .item img {
     height: 240px;
-    padding: 4px;
+    padding: 4px 4px 8px;
     border-radius: 12px;
   }
 
@@ -806,7 +803,7 @@ li {
   }
 
   #products .item-text dd {
-    padding: 0 4px 32px;
+    padding: 0 4px 4px;
     letter-spacing: 0;
     line-height: 1.5;
   }

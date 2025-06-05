@@ -56,61 +56,66 @@
       <!-- サーチアイコン -->
       <a href="#" class="serch-icon"><img src="./image/search.png" alt="サーチアイコン"></a>
     </div>
-
   </header>
 
   <main>
     <section>
-      <div id="contact-page">
-        <h2 class="content">- お問い合わせ・ご予約 -</h2>
+      <div class="inner-wrapper">
+        <div id="contact-page">
+          <h2 class="content">- お問い合わせ・ご予約 -</h2>
 
-        <div class="contact-box">
-          <div class="contact-selectbox">
-            <p class="contact-list">お問い合わせ内容<span>必須</span></p>
+          <div class="contact-box">
+            <div class="contact-selectbox">
+              <p class="contact-list">お問い合わせ内容<span>必須</span></p>
+              <div>
+                <select class="contact-select">
+                  <option value="">選択してください</option>
+                  <option value="ご質問">ご質問</option>
+                  <option value="ワークショップご予約">ワークショップご予約</option>
+                  <option value="お問い合わせ">お問い合わせ</option>
+                </select>
+              </div>
+            </div>
             <div>
-              <select class="contact-select">
-                <option value="">選択してください</option>
-                <option value="ご質問">ご質問</option>
-                <option value="ワークショップご予約">ワークショップご予約</option>
-                <option value="お問い合わせ">お問い合わせ</option>
-              </select>
+              <p class="contact-list">お名前<span>必須</span></p>
+              <div>
+                <input type="text" class="contact-name">
+              </div>
+            </div>
+            <div>
+              <p class="contact-list">メールアドレス<span>必須</span></p>
+              <div>
+                <input type="text" class="contact-mail">
+              </div>
+            </div>
+            <div>
+              <p class="contact-list">ご質問・ご意見・ワークショップご希望日時</p>
+              <div>
+                <textarea class="contact-area"></textarea>
+              </div>
             </div>
           </div>
-          <div>
-            <p class="contact-list">お名前<span>必須</span></p>
-            <div>
-              <input type="text" class="contact-name">
-            </div>
+
+          <div class="contact-text">
+            <p>※ワークショップご希望日時を記入してください。<br>折り返しこちらからご連絡させていただきます。</p>
           </div>
-          <div>
-            <p class="contact-list">メールアドレス<span>必須</span></p>
-            <div>
-              <input type="text" class="contact-mail">
-            </div>
-          </div>
-          <div>
-            <p class="contact-list">ご質問・ご意見・ワークショップご希望日時</p>
-            <div>
-              <textarea class="contact-area"></textarea>
-            </div>
-          </div>
+
+          <button class="btn contact send-btn">送信</button>
         </div>
-
-        <div class="contact-text">
-          <p>※ワークショップご希望日時を記入してください。<br>折り返しこちらからご連絡させていただきます。</p>
-        </div>
-
-        <button class="btn contact send-btn">送信</button>
       </div>
+
     </section>
   </main>
-  
+
   <!-- フッター -->
   <footer id="footer">
-    <h3>Handmade Gallery</h3>
-    <p>2025 Handmade Gallery All Right Reserved.</p>
+    <div class="inner-wrapper">
+      <h3>Handmade Gallery</h3>
+      <p>2025 Handmade Gallery All Right Reserved.</p>
+    </div>
   </footer>
   <script src="./slick/slick.min.js"></script>
   <script src="JS/main.js"></script>
 </body>
+
 </html>
